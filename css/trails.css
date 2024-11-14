@@ -1,0 +1,49 @@
+.aside {
+    width: 100%; 
+    background: var(--bg-black-100);
+    /* background-color: yellowgreen; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 30px;
+    height: 60px; 
+    border-bottom: 1px solid var(--bg-black-50); 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    z-index: 10;
+}
+
+.aside .logo {
+    position: relative; /* Change to relative for horizontal layout */
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-left: 0px; /* Add some margin to the left */
+}
+
+.aside .nav {
+    display: flex; /* Set the navigation items to display flex */
+    margin-right: 20px; /* Add some margin to the right */
+}
+
+.aside .nav li {
+    margin: 0 15px; /* Margin between navigation items */
+    display: inline-block; /* Change to inline-block for horizontal layout */
+}
+
+.aside .nav li a {
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block; /* Change to inline-block for horizontal layout */
+    border-bottom: none; /* Remove bottom border */
+    color: var(--text-black-900);
+    padding: 100px 100px;
+}
+
+.aside .nav li a.active {
+    color: var(--skin-color);
+}
+
+.aside .nav-toggler {
+    display: none; /* Hide the nav-toggler for horizontal layout */
+}
